@@ -1,0 +1,32 @@
+<div class="container-fluid animated fadeIn bg-light pb-5">
+    <div class="row" style="background: url('assets/img/banners/galeria.png'); position: bottom; background-size: cover;">
+        <div class="col-12 p-md-3">
+            <h2 class="text-light p-3 p-md-5 text-center">Cajas de alta seguridad</h2>
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 pt-3">
+                    <!-- <h2 class="text-primary mb-3">Galería</h2>  -->
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ex.</p> -->
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                
+                <div *ngFor="let item of galeria" class="col-4 col-md-3 p-1 p-md-3">
+                    <a [routerLink]="['/galeria-item', item.miniatura]">
+                        <img src="assets/img/alta/th/{{ item.miniatura }}" class="img-thumbnail rounded shadow img-fluid mx-auto d-block">
+                    </a>
+                </div>
+                
+            </div>
+
+            
+    </div>
+</div>
+
+

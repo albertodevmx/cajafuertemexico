@@ -1,0 +1,67 @@
+<div class="container-fluid animated pulse bg-light pb-5">
+
+
+  <div class="container p-0 p-md-3">
+
+    <div class="row">
+        <div class="col-12 text-right">
+          <a class="btn btn-danger mt-3 text-light text-md-right" routerLink="/productos">
+            <i class="fas fa-window-close"></i>
+          </a>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <h1 class="border-bottom pb-2 mt-3 mb-3 mb-md-5 text-primary">{{ item.nombre }}</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <img src="assets/img/productos/{{  item.imagen  }}" class="img-thumbnail img-fluid mx-auto d-block mb-3" style="width: 100%;">
+      </div>
+
+      <div class="col-12 col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <div [innerHTML]="item.resumen"></div>
+
+            <div class="d-block text-center text-md-right">
+              <a class="btn btn-danger mt-3 text-light text-md-right" routerLink="/productos">
+                <i class="fas fa-backspace"></i> Regresar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- 
+<div class='row'>
+<ul>
+<li>MEDIDAS DE 60 ALTO x 40 ANCHO x 40 FONDO ó 70 ALTO x 50 ANCHO x 50 FONDO</li>
+<li>CERRADURA NACIONAL, AMERICANA, DE DOBLE CONTROL O DIGITAL.</li>
+<li>ENTREPAÑO Ó TESORO</li>
+<li>BARRENOS EN EL INTERIOR DE LA CAJA PARA ANCLAR AL PISO (EN MODELO SIN RUEDAS)</li>
+<li>RUEDAS (OPCIONALES)</li>
+<li>PASADORES COLOR CROMO</li>
+<li>ALUMINIO EN LA MINIJA Y CERRADURA</li>
+</ul>
+</div>
+<div class='row'>
+<div class='col-6 p-3 p-md-5'><img src='assets/img/productos/4030301.jpg' class='img-fluid border shadow rounded'></div>
+<div class='col-6 p-3 p-md-5'><img src='assets/img/productos/4030302.jpg' class='img-fluid border shadow rounded'></div>
+</div>
+-->
+
+
+
+
+
+
+    </div>
+
+  </div>
+</div>
